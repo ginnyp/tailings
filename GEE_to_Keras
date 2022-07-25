@@ -1,0 +1,41 @@
+import pandas as pd
+import numpy as np
+import openpyxl
+import json
+import tifffile
+import os
+import sys
+from PIL import Image
+import matplotlib.pyplot as plt
+
+#read bounding box file
+df = pd.read_csv('BB_Coordinates.csv')
+
+for i, row in df.iterrows():
+    
+    x = row['file_num']
+    file =f"RGB_Images/{x}"
+    if os.path.exists(file):
+        print(file)
+        img = tifffile.imread(file)
+        df.loc[i,'Height'] = img.shape[0]
+        df.loc[i,'Width'] = img.shape[1]
+    else:
+        print(file + " not found in given location")
+
+
+df['x_min'] = pd.to_numeric(df['Width']*(df['img_x_min'] - df['tail_x_min'])/(df['img_x_min'] - df['img_x_max']), downcast='integer').astype(int)
+df['y_min'] = pd.to_numeric(df['Height']*(df['img_y_min'] - df['tail_y_min'])/(df['img_y_min'] - df['img_y_max']), downcast='integer').astype(int)
+df['x_max'] = pd.to_numeric(df['Width']*(df['img_x_min'] - df['tail_x_max'])/(df['img_x_min'] - df['img_x_max']), downcast='integer').astype(int)
+df['y_max'] = pd.to_numeric(df['Height']*(df['img_y_min'] - df['tail_y_max'])/(df['img_y_min'] - df['img_y_max']), downcast='integer').astype(int)
+
+df.loc[df['x_min'] < 0, 'x_min'] = 0
+df.loc[df['y_min'] < 0, 'y_min'] = 0
+df.loc[df['x_max'] > df['Width'], 'x_max'] = df['Width']-1
+df.loc[df['y_max'] > df['Height'], 'y_max'] = df['Height']-1
+df['label'] = 1
+df = df[['file_num','tail_x_min','tail_y_min','tail_x_max','tail_y_max','x_min','y_min','x_max','y_max','label']]
+
+
+#df.to_string('yolokeras.classes.txt',index = False)
+df.to_csv('retinanet.keras.csv', sep=',', header = False, index=False)

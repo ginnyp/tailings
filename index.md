@@ -1,37 +1,24 @@
-## Tailings: Identification and Characterization
+# Tailings: Identification and Characterization
 
-You can use the [editor on GitHub](https://github.com/ginnyp/tailings/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Mission Statement
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Deliver the first data-driven solution to identifying tailings that can be sources for critical minerals, enabling safe and efficient procurement of minerals essential to national security and economic prosperity.**
 
-### Markdown
+> *“Applying AI to identify more tailings and potentially more critical minerals in the United States would be a paradigm shift”
+> Bob Seal, Research Geologist at USGS, co-leads Earth MRI*
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Our Team
 
-```markdown
-Syntax highlighted code block
+## Our Project
 
-# Header 1
-## Header 2
-### Header 3
+### Motivation
 
-- Bulleted
-- List
+### Partners
 
-1. Numbered
-2. List
+### Data Sources
 
-**Bold** and _Italic_ and `Code` text
+### Predictive Model
 
-[Link](url) and ![Image](src)
-```
+### Web Application
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ginnyp/tailings/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Acknowledgements

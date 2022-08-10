@@ -1,5 +1,7 @@
 # Tailings: Identification and Characterization
 
+* [Mission Statement]()
+
 ## Mission Statement
 
 **Deliver the first data-driven solution to identifying tailings that can be sources for critical minerals, enabling safe and efficient procurement of minerals essential to national security and economic prosperity.**
@@ -24,6 +26,20 @@ You can explore our model predictions alongside all known tailings and mine dump
 
 
 !["](images/tailings_search.png)
+
+## Testimonials
+
+We have shared our product with potential users, and have had encouraging feedback, including the following quotations from stakeholders at our primary partner organizations.
+
+> *“This work builds on years of work to create the USMIN database that captures prospect and mine-related features from USGS topographic maps, and it could make a very substantial contribution to addressing next generation questions.”*
+>
+> *- Jeff Mauk, Research Geologist at the United States Geological Survey, co-leader of the USMIN database*
+
+> *“It looks like it has potential...if it identifies areas that haven’t been identified, and it has merit in that it identifies tailings that people already know about too.”*
+>
+> *- Dave Baker, COO of Regeneration, a social enterprise company focused on remining and renewing tailings*
+
+In August 2022, we will hand off our work to our partners so that they can continue to develop our model and our web application.
 
 ## Process
 
